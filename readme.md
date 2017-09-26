@@ -16,7 +16,7 @@ The source code has been tested in Linux and Windows platforms.
 Terms and conditions
 -------------------------------
 
-This code is free to use **for research purposes only**. *Just remember it is a research prototype and may not work for you*.
+This code is free to use **for research purposes only**. *Just remember it is a research prototype and may not work for you*. Please read the *legal.txt* file of the different blocks for more details concerning license.
 
 Acknowledgements
 -------------------------------
