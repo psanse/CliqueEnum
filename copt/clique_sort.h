@@ -423,8 +423,10 @@ int CliqueSort<Graph_t>::eval_order (vint& order){
 	}
 
 	//evaluates the ordering according to infra-chrom bounds for all subproblems
-	InitColorUB cub(g1);
-	return(cub.eval_init_order());
+	//InitColorUB cub(g1);
+	//return(cub.eval_init_order());
+
+	return 0;
 }
 
 

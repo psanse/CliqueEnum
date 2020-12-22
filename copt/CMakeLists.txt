@@ -30,11 +30,24 @@ endif()
 
 add_executable (greedy_bb ./examples/published_alg.cpp)
 IF (UNIX)
-        #find_package (Threads)
-        target_link_libraries (published_alg ${CMAKE_THREAD_LIBS_INIT})
+        find_package (Threads)
+        target_link_libraries (greedy_bb ${CMAKE_THREAD_LIBS_INIT})
 ENDIF ()
 target_link_libraries (greedy_bb LINK_PUBLIC copt graph bitscan utils)
 target_include_directories(greedy_bb PUBLIC ../tclap/include)
+
+###########
+#
+# target properties  
+#
+###########
+set_target_properties( greedy_bb 
+    PROPERTIES
+#    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
+#    LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+)
+
 
 
 install(TARGETS copt DESTINATION lib)
