@@ -3,7 +3,7 @@
 set(useful_headers_for_IDE ./clique/clique_types.h
 ./clique/clique_enum.h
 ./clique/clique.h
-)
+) 
 
 add_library (copt ./batch/benchmark_clique.cpp
 ${useful_headers_for_IDE}
